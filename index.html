@@ -52,11 +52,11 @@
       </div>
     </header>
     <main>
-      <section class="lg:px-12 md:px-12 sm:px-12">
+      <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
         <!-- product deatils -->
 
         <div
-          class="product-details mt-6 w-[70%]  grid sm:grid-cols-1 md:grid-cols-2 lg-grid-cols-3 gap-6"
+          class="product-details mt-6 w-[70%] grid sm:grid-cols-1 md:grid-cols-2 lg-grid-cols-3 gap-6"
         >
           <!-- product 1 -->
           <div class="card card-compact w-full bg-base-100 shadow-xl">
@@ -65,17 +65,21 @@
               <img class="w-full h-40" src="/images/cofee.jpg" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Coffee</h2>
+                <!-- fisrt name -->
+              <h2 id="first-name" class="card-title">Coffee</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Laudantium, tenetur.
               </p>
               <!-- Coffee price -->
-              <p>Price: $<span>100</span></p>
+              <p>Price: $<span id="first-price">100</span></p>
               <!-- Cofee quantity -->
-              <p>Quanity: <span>5</span></p>
+              <p>Quanity: <span id="first-quantity">5</span></p>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary">Add to Card</button>
+                <!-- button 1 ---first-card -->
+                <button id="first-card " class="btn btn-primary">
+                  Add to Card
+                </button>
               </div>
             </div>
           </div>
@@ -198,10 +202,38 @@
           </div>
         </div>
         <!-- card details -->
-        <div class="card-details"></div>
+        <div class="card-details w-full md:w-[30%] lg:w-[30%] mx-auto">
+          <h1 class="text-3xl text-center font-bold underline mt-8 mb-8">
+            Total Products: <span>0</span>
+          </h1>
+          <!-- Table Data -->
+          <div class="overflow-x-auto">
+            <table class="table w-full">
+              <!-- head -->
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Total</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody id="table-container">
+                <!-- row 1 -->
+                <!-- <tr>
+        <th>1</th>
+        <td>Cy Ganderton</td>
+        <td>Quality Control Specialist</td>
+        <td>Blue</td>
+      </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </div>
       </section>
     </main>
     <!-- JS link -->
-    <script src="./index.html"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
