@@ -52,10 +52,14 @@
       </div>
     </header>
     <main>
-      <section>
+      <section class="lg:px-12 md:px-12 sm:px-12">
         <!-- product deatils -->
-        <div class="product-details mt-6">
-          <div class="card card-compact w-96 bg-base-100 shadow-xl">
+
+        <div
+          class="product-details mt-6 w-[70%]  grid sm:grid-cols-1 md:grid-cols-2 lg-grid-cols-3 gap-6"
+        >
+          <!-- product 1 -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
             <!-- cofee images -->
             <figure>
               <img class="w-full h-40" src="/images/cofee.jpg" alt="Shoes" />
@@ -70,6 +74,123 @@
               <p>Price: $<span>100</span></p>
               <!-- Cofee quantity -->
               <p>Quanity: <span>5</span></p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Add to Card</button>
+              </div>
+            </div>
+          </div>
+          <!-- product 2 -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <!-- Apple images -->
+            <figure>
+              <img class="w-full h-40" src="/images/apple.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Apple JS</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium, tenetur.
+              </p>
+              <!-- Coffee price -->
+              <p>Price: $<span>90</span></p>
+              <!-- Cofee quantity -->
+              <p>Quanity: <span>7</span></p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Add to Card</button>
+              </div>
+            </div>
+          </div>
+          <!-- product 3 -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <!-- Orange images -->
+            <figure>
+              <img class="w-full h-40" src="/images/orange.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Orange JS</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium, tenetur.
+              </p>
+              <!-- orage price -->
+              <p>Price: $<span>50</span></p>
+              <!-- Cofee quantity -->
+              <p>Quanity: <span>10</span></p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Add to Card</button>
+              </div>
+            </div>
+          </div>
+          <!-- product 4 -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <!-- Pizaa images -->
+            <figure>
+              <img class="w-full h-40" src="/images/pizza.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Pizza JS</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium, tenetur.
+              </p>
+              <!-- pizza price -->
+              <p>Price: $<span>250</span></p>
+              <!-- pizza quantity -->
+              <p>Quanity: <span>1</span></p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Add to Card</button>
+              </div>
+            </div>
+          </div>
+          <!-- product 5 -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <!-- Burger images -->
+            <figure>
+              <img class="w-full h-40" src="/images/burger.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Burger JS</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium, tenetur.
+              </p>
+              <!-- orage price -->
+              <p>Price: $<span>100</span></p>
+              <!-- Cofee quantity -->
+              <p>Quanity: <span>1</span></p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Add to Card</button>
+              </div>
+            </div>
+          </div>
+          <!-- product 6 -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <!-- Cake images -->
+            <figure>
+              <img class="w-full h-40" src="/images/cake.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Cake JS</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium, tenetur.
+              </p>
+              <!-- Cake price -->
+              <!-- sm -->
+              <input
+                type="text"
+                placeholder="Price"
+                class="input input-bordered input-sm w-full max-w-xs"
+              />
+              <!-- <p>Price: $<span>400</span></p> -->
+              <!-- Cake quantity -->
+              <!-- sm -->
+              <input
+                type="text"
+                placeholder="Quantity"
+                class="input input-bordered input-sm w-full max-w-xs"
+              />
+              <!-- <p>Quanity: <span>1</span></p> -->
               <div class="card-actions justify-end">
                 <button class="btn btn-primary">Add to Card</button>
               </div>
